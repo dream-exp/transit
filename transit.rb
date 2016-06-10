@@ -5,14 +5,6 @@ require 'addressable/uri'
 srcStation = ARGV[0].to_s #第一引数は出発地を指定
 dstStation = ARGV[1].to_s #第二引数は到着地を指定
 
-# if srcStation == "高専正門" || srcStation == "大学高専下" || srcStation == "徳山駅前"
-# 		srcStation+="/防長バス"
-# end
-
-# if dstStation == "高専正門" || dstStation == "大学高専下" || dstStation == "徳山駅前"
-# 		dstStation+="/防長バス"
-# end
-
 if ARGV[2] == 'now' #第三引数にnowが入ると現在時刻で検索
 	day = Time.now
 	year = day.year
